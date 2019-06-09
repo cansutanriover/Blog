@@ -6,8 +6,13 @@ namespace MyBlog.UnitTest
     [TestClass]
     public class CategoryUT
     {
+        [TestInitialize]
+        public void Setup()
+        {
+        }
+        
         [TestMethod]
-        public void TestMethod1()
+        public void Save()
         {
         }
     }
