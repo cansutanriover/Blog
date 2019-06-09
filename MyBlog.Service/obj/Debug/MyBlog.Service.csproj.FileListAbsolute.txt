@@ -1,0 +1,34 @@
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Service.dll
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Service.pdb
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\AutoMapper.dll
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Data.dll
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\MyBlog.DTO.dll
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\EntityFramework.dll
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Data.pdb
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Data.dll.config
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\MyBlog.DTO.pdb
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\AutoMapper.pdb
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\AutoMapper.xml
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\bin\Debug\EntityFramework.xml
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.csprojAssemblyReference.cache
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.csproj.CoreCompileInputs.cache
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.csproj.CopyComplete
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.dll
+C:\Users\Bülent Başyurt\source\repos\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.pdb
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Service.dll
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Service.pdb
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\AutoMapper.dll
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Data.dll
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\MyBlog.DTO.dll
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\EntityFramework.dll
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Data.pdb
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\MyBlog.Data.dll.config
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\MyBlog.DTO.pdb
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\AutoMapper.pdb
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\AutoMapper.xml
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\bin\Debug\EntityFramework.xml
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.csprojAssemblyReference.cache
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.csproj.CoreCompileInputs.cache
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.csproj.CopyComplete
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.dll
+C:\Users\iau\Desktop\MyBlog\MyBlog.Service\obj\Debug\MyBlog.Service.pdb
