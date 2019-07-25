@@ -8,5 +8,7 @@
         public string CommentContent { get; set; }
         public bool IsConfirmed { get; set; }
         public System.DateTime CreatedDate { get; set; }
+
+        public string UserName { get; set; }
     }
 }

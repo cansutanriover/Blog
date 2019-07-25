@@ -31,8 +31,10 @@ namespace MyBlog.Service
                             BlogId = item.BlogId,
                             Title = item.Title,
                             CategoryName = item.Category.CategoryName,
-                            BlogContent = item.BlogContent.Substring(0, 250),
-                            CreatedDate = item.CreatedDate
+                            BlogContent = item.BlogContent.Length>=250 ? item.BlogContent.Substring(0, 250) : item.BlogContent,
+                            CreatedDate = item.CreatedDate,
+                            ImagePath=item.ImagePath,
+                            RecordStatusName=item.RecordStatus.RecordStatusName
                         };
 
                         list.Add(obj);
@@ -51,20 +53,46 @@ namespace MyBlog.Service
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                var result = uow.Blogs.Get(x =>
-                x.BlogId == id && x.IsConfirmed);
+                try
+                {
+                    var result = uow.Blogs.Get(x =>
+                            x.BlogId == id && x.IsConfirmed);
 
-                if (result == null)
+                    if (result == null)
+                    {
+                        return null;
+                    }
+
+                    BlogDTO blog = Mapper.Map<Blog, BlogDTO>(result);
+
+                    List<CommentDTO> list = new List<CommentDTO>();
+
+                    foreach (var item in result.Comments)
+                    {
+                        CommentDTO cmd = new CommentDTO
+                        {
+                            BlogId = item.BlogId,
+                            CommentContent = item.CommentContent,
+                            CommentId = item.CommentId,
+                            CreatedDate = item.CreatedDate,
+                            IsConfirmed = item.IsConfirmed,
+                            UserId = item.UserId,
+                            UserName = item.User.FirstName + " " + item.User.LastName
+                        };
+                        list.Add(cmd);
+                    }
+
+                    blog.CommandList = list;
+                    blog.CategoryName = result.Category.CategoryName;
+                    blog.Author = result.User.FirstName + " " + result.User.LastName;
+                    blog.RecordStatusName = result.RecordStatus.RecordStatusName;
+
+                    return blog;
+                }
+                catch (Exception ex)
                 {
                     return null;
                 }
-
-                BlogDTO blog = Mapper.Map<Blog, BlogDTO>(result);
-
-                blog.CategoryName = result.Category.CategoryName;
-                blog.Author = result.User.FirstName + " " + result.User.LastName;
-
-                return blog;
             }
         }
 
@@ -84,7 +112,7 @@ namespace MyBlog.Service
 
                     return entity.BlogId;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     uow.RollBack();
                     return 0;
@@ -104,7 +132,7 @@ namespace MyBlog.Service
 
                     return uow.Commit();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     uow.RollBack();
                     return false;

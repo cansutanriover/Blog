@@ -1,4 +1,6 @@
-﻿namespace MyBlog.DTO
+﻿using System.Collections.Generic;
+
+namespace MyBlog.DTO
 {
     public class BlogDTO : IEntity
     {
@@ -14,5 +16,7 @@
 
         public string CategoryName { get; set; }
         public string Author { get; set; }
+        public List<CommentDTO> CommandList { get; set; }
+        public string RecordStatusName { get; set; }
     }
 }

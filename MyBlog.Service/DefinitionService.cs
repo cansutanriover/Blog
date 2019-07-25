@@ -1,5 +1,6 @@
 ﻿using MyBlog.Data.UnitOfWork;
 using MyBlog.DTO;
+using System;
 using System.Collections.Generic;
 
 namespace MyBlog.Service
@@ -10,22 +11,29 @@ namespace MyBlog.Service
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                var result = uow.Categories.List();
-
-                List<CategoryDTO> list = new List<CategoryDTO>();
-
-                foreach (var item in result)
+                try
                 {
-                    CategoryDTO category = new CategoryDTO
+                    var result = uow.Categories.List();
+
+                    List<CategoryDTO> list = new List<CategoryDTO>();
+
+                    foreach (var item in result)
                     {
-                        CategoryId = item.CategoryId,
-                        CategoryName = item.CategoryName
-                    };
+                        CategoryDTO category = new CategoryDTO
+                        {
+                            CategoryId = item.CategoryId,
+                            CategoryName = item.CategoryName
+                        };
 
-                    list.Add(category);
+                        list.Add(category);
+                    }
+
+                    return list;
                 }
-
-                return list;
+                catch (Exception ex)
+                {
+                    return null;
+                }
             }
         }
 

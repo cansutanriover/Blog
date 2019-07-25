@@ -22,3 +22,15 @@ C:\Users\iau\Desktop\MyBlog\MyBlog.Data\obj\Debug\MyBlog.Data.csproj.CoreCompile
 C:\Users\iau\Desktop\MyBlog\MyBlog.Data\obj\Debug\MyBlog.Data.csproj.CopyComplete
 C:\Users\iau\Desktop\MyBlog\MyBlog.Data\obj\Debug\MyBlog.Data.dll
 C:\Users\iau\Desktop\MyBlog\MyBlog.Data\obj\Debug\MyBlog.Data.pdb
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\bin\Debug\MyBlog.Data.dll.config
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\bin\Debug\MyBlog.Data.dll
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\bin\Debug\MyBlog.Data.pdb
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\bin\Debug\EntityFramework.dll
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\bin\Debug\EntityFramework.xml
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\obj\Debug\MyBlog.Data.csprojAssemblyReference.cache
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\obj\Debug\MyBlog.Data.csproj.CoreCompileInputs.cache
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\obj\Debug\MyBlog.Data.csproj.CopyComplete
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\obj\Debug\MyBlog.Data.dll
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.Data\obj\Debug\MyBlog.Data.pdb

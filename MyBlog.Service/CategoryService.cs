@@ -15,23 +15,30 @@ namespace MyBlog.Service
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                var result = uow.Categories.Search(x => x.RecordStatusId == 1);
-
-                List<CategoryDTO> list = new List<CategoryDTO>();
-
-                foreach (var item in result)
+                try
                 {
-                    CategoryDTO obj = new CategoryDTO
+                    var result = uow.Categories.Search(x => x.RecordStatusId == 1);
+
+                    List<CategoryDTO> list = new List<CategoryDTO>();
+
+                    foreach (var item in result)
                     {
-                        CategoryId = item.CategoryId,
-                        CategoryName = item.CategoryName,
-                        NumberOfBlogs = item.Blogs.Count
-                    };
+                        CategoryDTO obj = new CategoryDTO
+                        {
+                            CategoryId = item.CategoryId,
+                            CategoryName = item.CategoryName,
+                            NumberOfBlogs = item.Blogs.Count
+                        };
 
-                    list.Add(obj);
+                        list.Add(obj);
+                    }
+
+                    return list.OrderBy(x => x.CategoryName).ToList();
                 }
-
-                return list.OrderBy(x => x.CategoryName).ToList();
+                catch (Exception ex)
+                {
+                    return null;
+                }
             }
         }
 
@@ -48,7 +55,7 @@ namespace MyBlog.Service
 
                     return entity.CategoryId;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     uow.RollBack();
                     return 0;
@@ -66,7 +73,7 @@ namespace MyBlog.Service
 
                     return uow.Commit();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     uow.RollBack();
                     return false;
@@ -88,7 +95,7 @@ namespace MyBlog.Service
 
                     return category;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     return null;
                 }
@@ -99,27 +106,34 @@ namespace MyBlog.Service
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                var result = uow.Categories
-                    .Search(x => x.RecordStatusId == 1)
-                    .OrderByDescending(x => x.Blogs.Count)
-                    .Take(5)
-                    .ToList();
-
-                List<CategoryDTO> list = new List<CategoryDTO>();
-
-                foreach (var item in result)
+                try
                 {
-                    CategoryDTO obj = new CategoryDTO
+                    var result = uow.Categories
+                                .Search(x => x.RecordStatusId == 1)
+                                .OrderByDescending(x => x.Blogs.Count)
+                                .Take(5)
+                                .ToList();
+
+                    List<CategoryDTO> list = new List<CategoryDTO>();
+
+                    foreach (var item in result)
                     {
-                        CategoryId = item.CategoryId,
-                        CategoryName = item.CategoryName,
-                        NumberOfBlogs = item.Blogs.Count
-                    };
+                        CategoryDTO obj = new CategoryDTO
+                        {
+                            CategoryId = item.CategoryId,
+                            CategoryName = item.CategoryName,
+                            NumberOfBlogs = item.Blogs.Count
+                        };
 
-                    list.Add(obj);
+                        list.Add(obj);
+                    }
+
+                    return list.OrderBy(x => x.CategoryName).ToList();
                 }
-
-                return list.OrderBy(x => x.CategoryName).ToList();
+                catch (Exception ex)
+                {
+                    return null;
+                }
             }
         }
     }

@@ -10,3 +10,9 @@ C:\Users\iau\Desktop\MyBlog\MyBlog.DTO\obj\Debug\MyBlog.DTO.csprojAssemblyRefere
 C:\Users\iau\Desktop\MyBlog\MyBlog.DTO\obj\Debug\MyBlog.DTO.csproj.CoreCompileInputs.cache
 C:\Users\iau\Desktop\MyBlog\MyBlog.DTO\obj\Debug\MyBlog.DTO.dll
 C:\Users\iau\Desktop\MyBlog\MyBlog.DTO\obj\Debug\MyBlog.DTO.pdb
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.DTO\bin\Debug\MyBlog.DTO.dll
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.DTO\bin\Debug\MyBlog.DTO.pdb
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.DTO\obj\Debug\MyBlog.DTO.csprojAssemblyReference.cache
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.DTO\obj\Debug\MyBlog.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.DTO\obj\Debug\MyBlog.DTO.dll
+C:\Users\Cansu\Documents\GitHub\Blog\MyBlog.DTO\obj\Debug\MyBlog.DTO.pdb
